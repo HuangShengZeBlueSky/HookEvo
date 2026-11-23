@@ -1,8 +1,40 @@
 cff-version: 1.2.0
-message: "Please cite this software when using the released code or artifacts."
+message: "Please cite the HookEvo paper when using this software."
 type: software
 title: "HookEvo: A Framework for Coordinated Plugin Evolution on Hook-Enabled Agent Runtimes"
 authors:
   - name: "HookEvo contributors"
 license: MIT
 repository-code: "https://github.com/HuangShengZeBlueSky/HookEvo"
+preferred-citation:
+  type: article
+  title: "HookEvo: A Framework for Coordinated Plugin Evolution on Hook-Enabled Agent Runtimes"
+  authors:
+    - family-names: "Huang"
+      given-names: "Shengze"
+    - family-names: "Mao"
+      given-names: "Yanyu"
+    - family-names: "Yu"
+      given-names: "Xiaofei"
+    - family-names: "Guo"
+      given-names: "Baoshen"
+    - family-names: "Wang"
+      given-names: "Xiaorui"
+    - family-names: "Wu"
+      given-names: "Zhiwen"
+    - family-names: "Wu"
+      given-names: "Sheng"
+    - family-names: "Wen"
+      given-names: "Fukang"
+    - family-names: "Wu"
+      given-names: "Chengxu"
+    - family-names: "Li"
+      given-names: "Linhao"
+    - family-names: "Sun"
+      given-names: "Kailai"
+    - family-names: "Mi"
+      given-names: "Baotong"
+  year: 2026
+  journal: "arXiv"
+  doi: "10.48550/arXiv.2611.27294"
+  url: "https://arxiv.org/abs/2611.27294"

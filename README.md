@@ -4,7 +4,7 @@
 
 HookEvo searches for task-specific plugins around a frozen language-model agent. A separate improver reads execution traces and proposes a patch. One patch can change both the handler that records a tool result and the handler that uses it later in the episode. DeepSeek Harness provides the runtime and lifecycle hooks.
 
-[Project page](https://huangshengzebluesky.github.io/HookEvo/) · [Main leaderboard](#main-leaderboard) · [Round replay](https://huangshengzebluesky.github.io/HookEvo/replay.html) · [Explore a harness](https://huangshengzebluesky.github.io/HookEvo/#checkpoints) · [Download checkpoints](artifacts/) · [Installation](#installation) · [Evaluation and search](REPRODUCING.md) · [Controller source](evolution/src/dsh_evolve/abc.py)
+[Paper on arXiv](https://arxiv.org/abs/2611.27294) · [Project page](https://huangshengzebluesky.github.io/HookEvo/) · [Main leaderboard](#main-leaderboard) · [Round replay](https://huangshengzebluesky.github.io/HookEvo/replay.html) · [Explore a harness](https://huangshengzebluesky.github.io/HookEvo/#checkpoints) · [Download checkpoints](artifacts/) · [Installation](#installation) · [Evaluation and search](REPRODUCING.md) · [Controller source](evolution/src/dsh_evolve/abc.py)
 
 **Figure 1. What a candidate can change.** Skill text, an independent component, and coordinated handlers give the improver three different edit scopes.
 
@@ -74,7 +74,9 @@ Use the reproduction guide to [evaluate a released harness](REPRODUCING.md#evalu
 
 ## Citation
 
-[Paper citation and BibTeX](https://huangshengzebluesky.github.io/HookEvo/#citation) · [Software citation](CITATION.cff)
+Shengze Huang et al. (2026). *HookEvo: A Framework for Coordinated Plugin Evolution on Hook-Enabled Agent Runtimes*. [arXiv:2611.27294](https://arxiv.org/abs/2611.27294).
+
+[Download paper BibTeX](website/paper.bib) · [Copy citation](https://huangshengzebluesky.github.io/HookEvo/#citation) · [Software BibTeX](website/software.bib)
 
 ## License
 

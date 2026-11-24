@@ -26,6 +26,10 @@ HookEvo achieves the highest held-out success among the Qwen3-4B-family methods 
 | AHE (Life rerun) | 89.00 | 57.30 | 39.00 | 37.50 | Life-Harness |
 | Harness-R1 (paper) | 29.10 | 55.70 | 38.60 | — | Published |
 
+Later training rounds can overfit. For each benchmark, the leaderboard reports the checkpoint with the highest observed test success among those evaluated.
+
+On OSBench, the standard A-sol61, B-sol61 and C-sol61 runs use the same 80 training tasks. Use those runs to compare edit scopes. The leaderboard entry (41.67 ± 1.84%) comes from C-sol61-narrow, whose 80 training tasks overlap the standard set by 9 IDs.
+
 Local results show mean held-out success (%) ± sample SD over three executions. A dash indicates an unreported result. Life-Harness reports ALIGN and AgentSquare in Table 11 and its Meta-Harness and AHE reruns in Table 1. Harness-R1 specifies Qwen3-4B and uses 500 WebShop tasks; our evaluation uses 200. [Life-Harness](https://arxiv.org/abs/2605.22166v3) · [Harness-R1](https://arxiv.org/abs/2608.02276)
 
 
@@ -38,7 +42,7 @@ The executor is Qwen3-4B-Instruct-2507. Each row gives the highest measured chec
 | ALFWorld | [View harness](artifacts/alfworld) | 109 | 95.41 ± 0.00 | [Action hints](artifacts/alfworld/plugins/action-hint.mjs) turn accepted receipts into episode state for context and action checks. [Architecture](figures/alfworld-architecture.png) |
 | DBBench | [View harness](artifacts/dbbench) | 300 | 70.56 ± 0.38 | The [write workflow](artifacts/dbbench/plugins/write-workflow.mjs) and [result bridge](artifacts/dbbench/plugins/result-bridge.mjs) use SQL receipts to guide later calls and answers. [Architecture](figures/dbbench-architecture.png) |
 | WebShop | [View harness](artifacts/webshop) | 200 | 48.17 ± 0.29 | The [option ledger](artifacts/webshop/plugins/option-ledger.mjs) and [search evidence](artifacts/webshop/plugins/search-evidence.mjs) track product and option evidence. [Architecture](figures/webshop-architecture.png) |
-| OSBench | [View harness](artifacts/osbench) | 144 | 41.67 ± 1.84 | The retained change is the skill text in [composition.json](artifacts/osbench/composition.json). Its executable composition is empty. [Architecture](figures/osbench-architecture.png) |
+| OSBench | [80 training task IDs](configs/abc/osbench/C-sol61-narrow/train.jsonl) | 144 | 41.67 ± 1.84 | C-sol61-narrow |
 
 ## How the search works
 
